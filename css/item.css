@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("imges/Back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* container styling start */
+.container4 {
+  width: 80vw;
+  height: 90vh;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 32px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "a b c"
+    "a d c";
+  position: relative;
+}
+/* container styling end */
+
+/* sidebar styling start */
+.sidebar1 {
+  grid-area: a;
+
+  background: rgba(255, 105, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+/* side bar styling end */
+
+/* headTitle styling start */
+.headTitle {
+  grid-area: b;
+  display: flex;
+  align-items: center;
+}
+/* headTitle styling end */
+
+/* AddItem styling start */
+.addItem {
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.Additemcard {
+  width: 80%;
+  height: 90%;
+  background: rgba(250, 114, 2, 0.5);
+  border-radius: 32px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+.Additemcard h3 {
+  font-family: "Abril Fatface", serif;
+  color: rgb(129, 56, 7);
+  font-size: 20px;
+}
+.Additemcard > input {
+  height: 30px;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+}
+
+.amount > input {
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  font-family: "Abril Fatface", serif;
+  margin-right: 10px;
+}
+.amount {
+  display: flex;
+  width: 90%;
+  height: 30px;
+  margin-top: 50px;
+  margin-left: 5px;
+}
+.btton {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.Add {
+  width: 50%;
+  height: 30px;
+  border: none;
+  background: rgb(253, 80, 0);
+  border-radius: 10px;
+  font-family: "Abril Fatface", serif;
+  color: white;
+  margin-right: 10px;
+}
+.Cancel {
+  width: 50%;
+  height: 30px;
+  border: none;
+  background: rgb(253, 0, 0);
+  border-radius: 10px;
+  font-family: "Abril Fatface", serif;
+  color: white;
+}
+.picture {
+  width: 200px;
+  height: 200px;
+  background: white;
+  margin-left: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+/* Add item styling end */
+.itemcardCollection {
+  grid-area: d;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.editDelete {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.edit {
+  width: 50px;
+  height: 45px;
+  background: indigo;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Delete {
+  width: 50px;
+  height: 45px;
+  background: red;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconEdit {
+  width: 25px;
+  height: 25px;
+  background-image: url("imges/ItemEdit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.iconDelete {
+  width: 25px;
+  height: 25px;
+  background-image: url("imges/ItemDelete.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1350px) {
+  .picture {
+    width: 150px;
+  }
+  .Additemcard > input {
+    width: 150px;
+  }
+  .amount {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .amount > input {
+    margin-bottom: 10px;
+    width: 150px;
+  }
+  .btton {
+    flex-direction: column;
+  }
+  .Add {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  .Cancel {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1272px) {
+  .container4 {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "a b"
+      "a d "
+      "a c";
+  }
+  .Additemcard {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 902px) {
+  .itemcardCollection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .name p {
+    display: none;
+  }
+}
+@media screen and (max-width: 586px) {
+  .itemcardCollection {
+    grid-template-columns: 1fr;
+  }
+  .addItem {
+    justify-content: flex-start;
+  }
+  .Additemcard {
+    width: 90%;
+  }
+  .headTitle {
+    align-self: center;
+    font-size: 10px;
+  }
+  .hide {
+    align-self: center;
+    justify-items: center;
+  }
+}

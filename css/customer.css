@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("imges/Back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* container styling start */
+.container1 {
+  width: 80%;
+  height: 90vh;
+  background: rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-areas:
+    "a b c"
+    "a d e"
+    "a d e";
+  margin-top: 50px;
+  border: none;
+  border-radius: 32px;
+}
+/* container styling end */
+
+/* sidebar styling start */
+.sidebar1 {
+  grid-area: a;
+  background: rgba(255, 105, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+/* sidebar styling end */
+
+/* headTitle1 styling start */
+.headTitle1 {
+  grid-area: b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headTitle1 h1 {
+  font-family: "Abril Fatface", serif;
+  color: rgb(104, 32, 6);
+}
+/* headTitle1 styling end */
+.filter1 {
+  grid-area: c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Customer card styling start */
+.customercard {
+  grid-area: d;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 3em;
+  padding-right: 3em;
+  position: relative;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+}
+.cusPic {
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 50%;
+  background-image: url("imges/Customer1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+  margin-top: 50px;
+  position: relative;
+  z-index: 111;
+}
+.cusPic1 {
+  width: 150px;
+  height: 150px;
+  border: none;
+  border-radius: 50%;
+  background-image: url("imges/beauty.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position-y: top;
+  margin-top: 50px;
+  position: relative;
+  z-index: 111;
+}
+
+.detals {
+  width: 250px;
+  height: 290px;
+  background-color: white;
+  border: none;
+  border-radius: 32px;
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 10px 10px 12px black;
+}
+.linecus {
+  width: 90%;
+  height: 2px;
+  background: red;
+  margin-top: 100px;
+  align-self: center;
+}
+.len2 {
+  width: 90%;
+  height: 2px;
+  background: red;
+  margin-top: 10px;
+}
+.detals p {
+  margin-top: 10px;
+  font-family: "Abril Fatface", serif;
+}
+
+.iconDE {
+  width: 80%;
+  height: 60px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.border {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: indigo;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+.border1 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(245, 53, 6);
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+.iconE {
+  width: 30px;
+  height: 30px;
+  background-image: url("imges/WhiteEdit.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.iconD {
+  width: 30px;
+  height: 30px;
+  background-image: url("imges/Delete.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nameCus {
+  color: orangered;
+}
+.nameCus1 {
+  color: rgb(233, 94, 44);
+}
+/* customer card styling end */
+
+/* Add Customer styling start */
+.addCustomer {
+  grid-area: e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(247, 245, 244, 0.7);
+  margin: 3em;
+  border-radius: 32px;
+}
+.customerForm {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customerForm > h4 {
+  font-family: "Abril Fatface", serif;
+  color: rgb(148, 40, 7);
+  font-size: 20px;
+}
+form > input {
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  border: solid 1px orange;
+  background: rgba(251, 251, 251, 0.8);
+  border-radius: 10px;
+}
+input {
+  padding-left: 20px;
+  font-family: "Abril Fatface", serif;
+}
+.saveCancel {
+  margin-top: 50px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+.save {
+  width: 45%;
+  height: 90%;
+  background: orangered;
+  color: white;
+  font-family: "Abril Fatface", serif;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.profile {
+  width: 70px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("imges/beauty.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plusIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url("imges/AddIcon.png");
+  background-position: center;
+  background-size: cover;
+}
+/* Add Customer Styling end */
+
+@media screen and (max-width: 1182px) {
+  .customerForm {
+    justify-content: flex-start;
+  }
+  .card {
+    margin-right: 0px;
+  }
+  .container1 {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+    grid-template-areas:
+      "a b "
+      "a c "
+      "a d"
+      "a e";
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .customercard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 462px) {
+  .card {
+    align-items: flex-start;
+    margin: 5px;
+  }
+  .detals {
+    width: 200px;
+  }
+  .headTitle1 h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 392px) {
+  .container1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    grid-template-areas:
+      "b "
+      "c"
+      "d"
+      "e";
+  }
+}

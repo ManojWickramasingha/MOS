@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Body styling start */
+body {
+  background-image: url("imges/Back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* Body styling end */
+
+/* SideBar Styling start */
+.sidebar {
+  width: 10vw;
+  height: 120vh;
+  background: rgb(243, 69, 6, 0.5);
+  border: none;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.Home {
+  width: 10%;
+  height: 10%;
+  margin-bottom: 50px;
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+}
+.Home:hover {
+  background: rgb(247, 29, 0);
+  border-radius: 10px;
+  padding: 5px;
+}
+.hideicon {
+  width: 5vw;
+  height: 5vh;
+  border: none;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: flex;
+  background-image: url("imges/Menubar.png");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+.name {
+  border: none;
+  background: transparent;
+}
+.name span {
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-size: 20px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  background-image: url("imges/Home.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hide {
+  width: 25px;
+  height: 25px;
+  background-image: url("imges/Menubar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+.icon1 {
+  width: 50px;
+  height: 50px;
+  background-image: url("imges/Order.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon2 {
+  width: 50px;
+  height: 50px;
+  background-image: url("imges/Customer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon3 {
+  width: 50px;
+  height: 50px;
+  background-image: url("imges/Report.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon4 {
+  width: 50px;
+  height: 50px;
+  background-image: url("imges/Item.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* SideBar styling end */
+
+/* container box styling */
+.container {
+  width: 80vw;
+  height: 120vh;
+  border: none;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.3);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(fit-content, auto);
+  position: relative;
+  padding-right: 3em;
+  margin-top: 200px;
+}
+/* continer box styling end */
+
+/* Mos Bugger Hedder stylin start */
+.HeadTitle {
+  width: max-content;
+  height: max-content;
+  position: absolute;
+  top: 20px;
+  left: 43%;
+}
+.title {
+  font-family: "Abril Fatface", serif;
+  color: rgb(143, 22, 1);
+}
+/* MOS Bugger Heder styling end */
+
+/* Search box styling start */
+.searchbox {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 50px;
+  left: 80%;
+}
+#search {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 50px;
+  font-family: "Abril Fatface", serif;
+  position: relative;
+}
+.searchIcon {
+  width: 25px;
+  height: 25px;
+  background-image: url("imges/Search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+/* search box styling end */
+
+/* Item Car section Styling start */
+.itemCardRow {
+  position: absolute;
+  left: 300px;
+  top: 150px;
+  width: fit-content;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 330px;
+  margin: 10px;
+}
+.cardPic {
+  width: 150px;
+  height: 200px;
+  background: rgb(199, 9, 9);
+  align-self: center;
+  justify-items: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CardPicItem {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/bugger01-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItem1 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/fries-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItem2 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/Past-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItem3 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/chicken-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItem4 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/Baverage-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItem5 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/submarine-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItem6 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/bugggerbac-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.cardDetails {
+  padding-top: 60px;
+  width: 150px;
+  height: 400px;
+  background: white;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15%;
+}
+.price {
+  width: 150px;
+  height: 30px;
+  background: white;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+.plusIcon {
+  width: 25px;
+  height: 25px;
+  background-image: url("imges/Plus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price p {
+  font-family: "Abril Fatface", serif;
+}
+.rate {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rate p {
+  font-family: "Abril Fatface", serif;
+}
+.star {
+  width: 25px;
+  height: 25px;
+  background-image: url("imges/star.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.namePrce {
+  width: fit-content;
+  height: 30px;
+  align-self: center;
+  justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.stoke {
+  width: 100px;
+  height: 20px;
+  align-self: center;
+  justify-items: center;
+  display: flex;
+  background: white;
+  align-items: center;
+  justify-content: center;
+  color: orangered;
+}
+.line {
+  width: 150px;
+  height: 2px;
+  background: rgb(240, 238, 238);
+}
+.de {
+  width: 100px;
+  height: 20px;
+  align-self: center;
+  justify-items: center;
+  display: flex;
+  background: white;
+  align-items: center;
+  padding-left: 20px;
+}
+.de span {
+  padding-left: 3px;
+}
+/* Item Card section styling end */
+
+/* Add media Query */
+@media screen and (max-width: 1286px) {
+  .itemCardRow {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #search {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1038px) {
+  .itemCardRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .searchbox {
+    top: 100px;
+    left: 40%;
+  }
+  #search {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 932px) {
+  .name {
+    display: none;
+  }
+}
+@media screen and (max-width: 790px) {
+  .itemCardRow {
+    grid-template-columns: 1fr;
+    left: 200px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .icon,
+  .icon1,
+  .icon2,
+  .icon3,
+  .icon4 {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .HeadTitle {
+    left: 23%;
+    font-size: 10x;
+  }
+  .searchbox {
+    top: 100px;
+    left: 20%;
+  }
+  .itemCardRow {
+    left: 100px;
+  }
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOS</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hideicon"></div>
+    <!-- container section start -->
+    <div class="container">
+      <!-- sidebar container start -->
+      <div class="sidebar">
+        <!-- Home division -->
+        <div class="Home">
+          <div class="icon"></div>
+          <div class="hide"></div>
+          <div class="name" onclick="myFunc()">
+            <span>Home</span>
+          </div>
+        </div>
+        <!-- Home division -->
+
+        <!-- Home division -->
+        <div class="Home">
+          <div class="icon1"></div>
+          <div class="name" onclick="myFunc1()">
+            <span>Order</span>
+          </div>
+        </div>
+        <!-- Home division -->
+
+        <!-- Home division -->
+        <div class="Home">
+          <div class="icon2"></div>
+          <div class="name" onclick="myFunc2()">
+            <span>Customer</span>
+          </div>
+        </div>
+        <!-- Home division -->
+
+        <!-- Home division -->
+        <div class="Home">
+          <div class="icon3"></div>
+          <div class="name" onclick="myFunc3()">
+            <span>Report</span>
+          </div>
+        </div>
+        <!-- Home division -->
+
+        <!-- Home division -->
+        <div class="Home">
+          <div class="icon4"></div>
+          <div class="name" onclick="myFunc4()">
+            <span>Item</span>
+          </div>
+        </div>
+        <!-- Home division -->
+      </div>
+      <!-- sidebar container End -->
+
+      <!-- Mos Bugger title -->
+      <div class="HeadTitle">
+        <h1 class="title">MOS BUGGER</h1>
+      </div>
+      <!-- Mos Bugger title end -->
+
+      <!-- Search box start -->
+      <div class="searchbox">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search item"
+          required
+        />
+        <button class="searchIcon" onclick="Search()"></button>
+      </div>
+
+      <!-- Search box end -->
+    </div>
+    <!-- Item Card section start -->
+    <div class="itemCardRow">
+      <div class="itemCard">
+        <div class="cardPic">
+          <div class="CardPicItem" id="one"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>15%</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>Bugger</h3>
+            <p>(Regular)</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>B01</span>
+
+            <span>7</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>RS.1,500.00</p>
+            <div class="plusIcon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemCard">
+        <div class="cardPic">
+          <div class="CardPicItem1"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>10 %</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>Fries</h3>
+            <p>(Regular)</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>F01</span>
+
+            <span>3</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>RS.1,000.00</p>
+            <div class="plusIcon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemCard">
+        <div class="cardPic">
+          <div class="CardPicItem2"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>7 %</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>Pasta</h3>
+            <p>(Regular)</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>P01</span>
+
+            <span>8</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>RS.1,300.00</p>
+            <div class="plusIcon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemCard">
+        <div class="cardPic">
+          <div class="CardPicItem3"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>16 %</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>RosChicken</h3>
+            <p>(Full)</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>C01</span>
+
+            <span>10</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>RS.2,000.00</p>
+            <div class="plusIcon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemCard">
+        <div class="cardPic">
+          <div class="CardPicItem4"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>13 %</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>Beverage</h3>
+            <p>(200m1)</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>Bv01</span>
+
+            <span>10</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>RS.8,00.00</p>
+            <div class="plusIcon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemCard">
+        <div class="cardPic">
+          <div class="CardPicItem5"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>10 %</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>Submarine</h3>
+            <p>(Regular)</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>S01</span>
+
+            <span>10</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>RS.1,000.00</p>
+            <div class="plusIcon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemCard">
+        <div class="cardPic">
+          <div class="CardPicItem6"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>12 %</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>Bugger</h3>
+            <p>(FullPack)</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>P02</span>
+
+            <span>10</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>RS.3,000.00</p>
+            <div class="plusIcon"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="itemCard">
+        <div class="cardPic">
+          <div class="CardPicItem3"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>16 %</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>RosChicken</h3>
+            <p>(Full)</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>C01</span>
+
+            <span>10</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>RS.2,000.00</p>
+            <div class="plusIcon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item Card section end -->
+
+    <!-- container section end -->
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
