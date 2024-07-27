@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container5">
+      <!-- Title section start -->
+      <div class="headTitle">
+        <h3>MOS BUGGRE</h3>
+      </div>
+      <!-- Title section end -->
+
+      <!-- Payment section start -->
+      <div class="payment">
+        <div class="cardParent">
+          <div class="title">
+            <h3>Payment Method</h3>
+          </div>
+          <div class="method">
+            <div class="visa">
+              <div class="vistext"><input type="checkbox" name="" id="" /></div>
+              <div class="vispic"></div>
+            </div>
+            <div class="credit">
+              <div class="vistext"><input type="checkbox" name="" id="" /></div>
+              <div class="vispic"></div>
+            </div>
+            <div class="paypal">
+              <div class="vistext"><input type="checkbox" name="" id="" /></div>
+              <div class="vispic"></div>
+            </div>
+          </div>
+          <div class="inputDetails">
+            <div class="form">
+              <input
+                type="number"
+                name="cardnumber"
+                id="cardnumber"
+                placeholder="Card Number"
+                required
+              />
+              <input
+                type="text"
+                name="cardHolder"
+                id="cardHolder"
+                placeholder="Card Holder"
+                required
+              />
+              <div class="sub">
+                <input
+                  type="month"
+                  name="month"
+                  id="month"
+                  placeholder="month"
+                  required
+                />
+                <input
+                  type="text"
+                  name="Year"
+                  id="year"
+                  placeholder="Year"
+                  required
+                />
+              </div>
+              <input
+                type="number"
+                name="cvc"
+                id="cvc"
+                placeholder="CVC"
+                required
+              />
+            </div>
+          </div>
+          <div class="footer">
+            <button class="checkout">Payment</button>
+          </div>
+        </div>
+      </div>
+      <!-- Payment section end -->
+      <div class="cartTable">
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Size</th>
+                <th>Quntity</th>
+                <th>Amount</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="itempic"></div></td>
+                <td>
+                  <div class="size">
+                    <span>Regular</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+                </td>
+                <td>
+                  <div class="addmin">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>1</span>
+                    <i class="fa-solid fa-minus"></i>
+                  </div>
+                </td>
+                <td>2,500.00</td>
+                <td><i class="fa-solid fa-trash"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="fotter">
+        <div class="fullset">
+          <div class="icon"><i class="fa-solid fa-arrow-left"></i></div>
+          <div class="text">Continue</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

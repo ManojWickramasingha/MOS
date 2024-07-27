@@ -194,6 +194,11 @@ let card2 = `<div class="cardPic">
 function Search() {
   let search = document.getElementById("search").value;
 
+  fetch("./DB.json")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    });
   switch (search) {
     case "Bugger":
       Bugger.forEach((element) => {
@@ -324,4 +329,39 @@ function myFunc3() {
 }
 function myFunc4() {
   window.location.href = "http://127.0.0.1:5500/item.html";
+}
+
+function addcart() {
+  window.location.href = "http://127.0.0.1:5500/card.html";
+}
+
+function validatePhoneNumber() {
+  // Get and trim phone number input
+  const phoneNumber = document.getElementById("CustomerPhone").value.trim();
+
+  // Regex pattern for 10-digit phone number
+  const pattern = /^\d{10}$/;
+
+  // Validate phone number and update message
+  const isValid = pattern.test(phoneNumber);
+  document.getElementById("phoneValidationMsg").textContent = isValid
+    ? ""
+    : "Please enter a valid 10-digit phone number.";
+
+  // Return validation status
+  return isValid;
+}
+
+function isComplete() {
+  const customerId = document.getElementById("customerId").value.trim();
+
+  const pattern = /^\d{7}$/;
+
+  const isValid = pattern.test(customerId);
+  document.getElementById("errormessage").textContent = isValid
+    ? ""
+    : "Please enter a valid  digit 6-digit number list.";
+
+  // Return validation status
+  return isValid;
 }

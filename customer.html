@@ -25,28 +25,28 @@
     <div class="container1">
       <!-- side bar section start -->
       <div class="sidebar1">
-        <div class="item1">
+        <div class="item1" onclick="myFunc()">
           <div class="icon"></div>
           <div class="hide"></div>
           <div class="name"><p>Home</p></div>
         </div>
 
-        <div class="item1">
+        <div class="item1" onclick="myFunc1()">
           <div class="icon1"></div>
           <div class="name"><p>Order</p></div>
         </div>
 
-        <div class="item1">
+        <div class="item1" onclick="myFunc2()">
           <div class="icon2"></div>
           <div class="name"><p>Customer</p></div>
         </div>
 
-        <div class="item1">
+        <div class="item1" onclick="myFunc3()">
           <div class="icon3"></div>
           <div class="name"><p>Report</p></div>
         </div>
 
-        <div class="item1">
+        <div class="item1" onclick="myFunc4()">
           <div class="icon4"></div>
           <div class="name"><p>Item</p></div>
         </div>
@@ -111,19 +111,25 @@
               name="customerId"
               id="customerId"
               placeholder="Customer Id"
+              autocomplete="off"
+              onchange="isComplete()"
             />
+            <small id="errormessage"></small>
             <input
               type="text"
               name="CustomerName"
               id="CustomerName"
               placeholder="Customer Name"
+              autocomplete="off"
             />
             <input
               type="text"
               name="CustomerPhone"
               id="CustomerPhone"
               placeholder="Customer phone number"
+              onchange="validatePhoneNumber()"
             />
+            <small id="phoneValidationMsg"></small>
           </form>
           <div class="saveCancel">
             <button class="save">Save</button>
@@ -132,5 +138,7 @@
         </div>
       </div>
     </div>
+
+    <script src="JS/script.js"></script>
   </body>
 </html>

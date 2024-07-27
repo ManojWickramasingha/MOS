@@ -1,0 +1,98 @@
+{
+  "Bugger": [
+    {
+      "name": "Bugger",
+      "type": "(chicken)",
+      "imagePath": "",
+      "rate": "20%",
+      "portion": "(Regular)",
+      "code": "B002",
+      "stoke": 5,
+      "price": 1500.0
+    },
+    {
+      "name": "Bugger",
+      "type": "(fish)",
+      "imagePath": "",
+      "rate": "20%",
+      "portion": "(Regular)",
+      "code": "B003",
+      "stoke": 4,
+      "price": 1500.0
+    },
+    {
+      "name": "Bugger",
+      "type": "(mutton)",
+      "imagePath": "",
+      "rate": "20%",
+      "portion": "(Regular)",
+      "code": "B004",
+      "stoke": 8,
+      "price": 1500.0
+    }
+  ],
+  "Chicken": [
+    {
+      "name": "Chicken",
+      "type": "(Kalukum)",
+      "imagePath": "imges/bugger01-removebg.png",
+      "rate": "5%",
+      "portion": "(Regular)",
+      "code": "C001",
+      "stoke": 2,
+      "price": 1500.0
+    },
+    {
+      "name": "Chicken",
+      "type": "(Curry)",
+      "imagePath": "imges/bugger01-removebg.png",
+      "rate": "12%",
+      "portion": "(Regular)",
+      "code": "C002",
+      "stoke": 3,
+      "price": 500.0
+    },
+    {
+      "name": "Chicken",
+      "type": "(Devel)",
+      "imagePath": "imges/bugger01-removebg.png",
+      "rate": "10%",
+      "portion": "(Regular)",
+      "code": "C004",
+      "stoke": 8,
+      "price": 1000.0
+    }
+  ],
+  "Beverage": [
+    {
+      "name": "Beverage",
+      "type": "(Watermelon)",
+      "imagePath": "imges/bugger01-removebg.png",
+      "rate": "11%",
+      "portion": "(300ml)",
+      "code": "Bv001",
+      "stoke": 5,
+      "price": 500.0
+    },
+    {
+      "name": "Beverage",
+      "type": "(Avecardo)",
+      "imagePath": "imges/bugger01-removebg.png",
+      "rate": "15%",
+      "portion": "(300ml)",
+      "code": "Bv002",
+      "stoke": 10,
+      "price": 520.0
+    },
+    {
+      "name": "Beverage",
+      "type": "(Fulooda)",
+      "imagePath": "imges/bugger01-removebg.png",
+      "rate": "12%",
+      "portion": "(300ml)",
+      "code": "Bv003",
+      "stoke": 4,
+      "price": 400.0
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("imges/Back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Container styling start */
+.container5 {
+  width: 80%;
+  height: 90vh;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 32px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "a b"
+    "c b"
+    "d b";
+}
+/* Container styling end */
+
+/* headTitle styling start */
+.headTitle {
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headTitle h3 {
+  font-family: "Abril Fatface", serif;
+  color: brown;
+  font-size: 30px;
+}
+
+/* headtitle styling end */
+
+/* Payment styling start */
+.payment {
+  grid-area: b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.cardParent {
+  width: 80%;
+  height: 80vh;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(252, 65, 8, 0.5);
+  display: grid;
+  grid-gap: 1em 2em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 3fr 1fr;
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d";
+}
+.title {
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title h3 {
+  font-family: "Abril Fatface", serif;
+  color: white;
+  font-size: 20px;
+}
+.method {
+  grid-area: b;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "a"
+    "b"
+    "c";
+}
+.visa {
+  grid-area: a;
+
+  display: flex;
+  align-items: center;
+}
+.vistext {
+  width: 45px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Abril Fatface", serif;
+  text-align: center;
+}
+.vispic {
+  width: 70%;
+  height: 50px;
+  background-image: url("imges/visacard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.credit {
+  grid-area: b;
+  display: flex;
+  align-items: center;
+}
+.paypal {
+  grid-area: c;
+  display: flex;
+  align-items: center;
+}
+.inputDetails {
+  grid-area: c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: solid gray 2px;
+}
+.form > input {
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Abril Fatface", serif;
+}
+.sub {
+  display: flex;
+  margin-top: 10px;
+}
+.sub > input {
+  width: 75px;
+  height: 30px;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: "Abril Fatface", serif;
+  text-align: center;
+  margin-right: 5px;
+}
+.footer {
+  grid-area: d;
+  border-top: solid gray 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkout {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: "Abril Fatface", serif;
+  color: white;
+  background: red;
+}
+/* Payment styling end */
+.cartTable {
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+}
+.table table {
+  width: 400px;
+}
+th {
+  border-bottom: solid 1px black;
+  border-collapse: collapse;
+  font-family: "Abril Fatface", serif;
+  color: rgb(255, 83, 4);
+}
+td {
+  text-align: center;
+}
+.itempic {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-image: url("imges/bugger01-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  background: gray;
+  padding: 5px;
+  border-radius: 2px;
+}
+.size span {
+  margin-right: 5px;
+}
+.addmin {
+  width: 80px;
+  height: 30px;
+  padding: 5px;
+  background: gray;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addmin i {
+  padding: 10px;
+}
+.addmin span {
+  padding: 10px;
+}
+.fotter {
+  grid-area: d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fullset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+.fullset .text {
+  color: rgb(255, 30, 0);
+  margin-left: 5px;
+}

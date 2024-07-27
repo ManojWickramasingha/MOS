@@ -41,6 +41,13 @@ body {
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
 }
+
+.item1:hover {
+  background: rgb(247, 29, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
 /* sidebar styling end */
 
 /* headTitle1 styling start */
@@ -225,6 +232,12 @@ form > input {
 input {
   padding-left: 20px;
   font-family: "Abril Fatface", serif;
+}
+#phoneValidationMsg {
+  color: red;
+}
+#errormessage {
+  color: red;
 }
 .saveCancel {
   margin-top: 50px;

@@ -40,6 +40,28 @@ body {
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
 }
+.item1 {
+  width: 10%;
+  height: 10%;
+  margin-bottom: 10px;
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+}
+.item1:hover {
+  background: rgb(247, 29, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
 /* sidebar styling end */
 
 /* report type styling start */
