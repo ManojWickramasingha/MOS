@@ -316,13 +316,13 @@ function Search() {
 }
 
 function myFunc() {
-  window.location.href = "http://127.0.0.1:5500/index.html";
+  window.location.href = "index.html";
 }
 function myFunc1() {
-  window.location.href = "http://127.0.0.1:5500/order.html";
+  window.location.href = "order.html";
 }
 function myFunc2() {
-  window.location.href = "http://127.0.0.1:5500/customer.html";
+  window.location.href = "customer.html";
 }
 function myFunc3() {
   window.location.href = "http://127.0.0.1:5500/report.html";
