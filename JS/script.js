@@ -355,7 +355,7 @@ function validatePhoneNumber() {
 function isComplete() {
   const customerId = document.getElementById("customerId").value.trim();
 
-  const pattern = /^\d{7}$/;
+  const pattern = /^\d{6}$/;
 
   const isValid = pattern.test(customerId);
   document.getElementById("errormessage").textContent = isValid
