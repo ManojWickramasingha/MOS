@@ -236,14 +236,14 @@ function myFunc2() {
   window.location.href = "customer.html";
 }
 function myFunc3() {
-  window.location.href = "http://127.0.0.1:5500/report.html";
+  window.location.href = "report.html";
 }
 function myFunc4() {
-  window.location.href = "http://127.0.0.1:5500/item.html";
+  window.location.href = "item.html";
 }
 
 function addcart() {
-  window.location.href = "http://127.0.0.1:5500/card.html";
+  window.location.href = "card.html";
 }
 
 function validatePhoneNumber() {
