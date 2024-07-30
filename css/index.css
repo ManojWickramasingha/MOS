@@ -230,6 +230,62 @@ body {
   top: 20px;
   z-index: 111;
 }
+.CardPicItemB1 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/chickenBugger-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.cardPicItemB2 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/bugger01-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.cardPicItemB3 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/FishBugger-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.cardPicItemB4 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/muttonBugger.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
 .CardPicItem1 {
   width: 100px;
   height: 100px;
@@ -272,10 +328,80 @@ body {
   top: 20px;
   z-index: 111;
 }
+.CardPicItemC3 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/chickenCurry-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItemC4 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/chickenDevel-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
 .CardPicItem4 {
   width: 100px;
   height: 100px;
   background-image: url("imges/Baverage-removebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItemBV4 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/beer-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItemBV5 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/cider-removebg-preview.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  align-self: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  z-index: 111;
+}
+.CardPicItemBV6 {
+  width: 100px;
+  height: 100px;
+  background-image: url("imges/cider-removebg-preview.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

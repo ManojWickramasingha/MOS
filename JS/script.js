@@ -9,6 +9,7 @@ const database = [
       code: "B002",
       stoke: 5,
       price: 1500.0,
+      classname: "CardPicItemB1",
     },
     {
       name: "Bugger",
@@ -19,6 +20,7 @@ const database = [
       code: "B003",
       stoke: 4,
       price: 1500.0,
+      classname: "cardPicItemB2",
     },
     {
       name: "Bugger",
@@ -29,45 +31,46 @@ const database = [
       code: "B004",
       stoke: 8,
       price: 1500.0,
+      classname: "cardPicItemB4",
     },
   ]),
   (Chicken = [
     {
       name: "Chicken",
       type: "(Kalukum)",
-      imagePath: "imges/bugger01-removebg.png",
       rate: "5%",
       portion: "(Regular)",
       code: "C001",
       stoke: 2,
       price: 1500.0,
+      classname: "CardPicItem3",
     },
     {
       name: "Chicken",
       type: "(Curry)",
-      imagePath: "imges/bugger01-removebg.png",
       rate: "12%",
       portion: "(Regular)",
       code: "C002",
       stoke: 3,
       price: 500.0,
+      classname: "CardPicItemC3",
     },
     {
       name: "Chicken",
       type: "(Devel)",
-      imagePath: "imges/bugger01-removebg.png",
       rate: "10%",
       portion: "(Regular)",
       code: "C004",
       stoke: 8,
       price: 1000.0,
+      classname: "CardPicItemC4",
     },
   ]),
   (Beverage = [
     {
       name: "Beverage",
-      type: "(Watermelon)",
-      imagePath: "imges/bugger01-removebg.png",
+      type: "(Beer)",
+      classname: "CardPicItemBV4",
       rate: "11%",
       portion: "(300ml)",
       code: "Bv001",
@@ -76,8 +79,8 @@ const database = [
     },
     {
       name: "Beverage",
-      type: "(Avecardo)",
-      imagePath: "imges/bugger01-removebg.png",
+      type: "(cider)",
+      classname: "CardPicItemBV5",
       rate: "15%",
       portion: "(300ml)",
       code: "Bv002",
@@ -86,162 +89,37 @@ const database = [
     },
     {
       name: "Beverage",
-      type: "(Fulooda)",
-      imagePath: "imges/bugger01-removebg.png",
+      type: "(Cocktails)",
       rate: "12%",
       portion: "(300ml)",
       code: "Bv003",
       stoke: 4,
       price: 400.0,
+      classname: "CardPicItemBV6",
     },
   ]),
   (Submarine = [{}, {}, {}]),
 ];
 let i = 0;
 
-let card = `
-        <div class="cardPic">
-          <div class="CardPicItem" id="one"></div>
-        </div>
-
-        <div class="cardDetails">
-          <div class="rate">
-            <p>15%</p>
-            <div class="star"></div>
-          </div>
-          <div class="namePrce">
-            <h3>Bugger</h3>
-            <p>(Regular)</p>
-          </div>
-          <div class="stoke">
-            <span>Code</span>
-            <span> | </span>
-            <span>Stoke</span>
-          </div>
-          <div class="de">
-            <span>B01</span>
-
-            <span>7</span>
-          </div>
-          <div class="line"></div>
-          <div class="price">
-            <p>RS.1,500.00</p>
-            <div class="plusIcon"></div>
-          </div>
-        </div>
-                `;
-
-let card1 = `<div class="cardPic">
-          <div class="CardPicItem3"></div>
-        </div>
-
-        <div class="cardDetails">
-          <div class="rate">
-            <p>16 %</p>
-            <div class="star"></div>
-          </div>
-          <div class="namePrce">
-            <h3>RosChicken</h3>
-            <p>(Full)</p>
-          </div>
-          <div class="stoke">
-            <span>Code</span>
-            <span> | </span>
-            <span>Stoke</span>
-          </div>
-          <div class="de">
-            <span>C01</span>
-
-            <span>10</span>
-          </div>
-          <div class="line"></div>
-          <div class="price">
-            <p>RS.2,000.00</p>
-            <div class="plusIcon"></div>
-          </div>
-        </div>`;
-
-let card2 = `<div class="cardPic">
-        <div class="CardPicItem4"></div>
-      </div>
-
-      <div class="cardDetails">
-        <div class="rate">
-          <p>16 %</p>
-          <div class="star"></div>
-        </div>
-        <div class="namePrce">
-          <h3>RosChicken</h3>
-          <p>(Full)</p>
-        </div>
-        <div class="stoke">
-          <span>Code</span>
-          <span> | </span>
-          <span>Stoke</span>
-        </div>
-        <div class="de">
-          <span>C01</span>
-
-          <span>10</span>
-        </div>
-        <div class="line"></div>
-        <div class="price">
-          <p>RS.2,000.00</p>
-          <div class="plusIcon"></div>
-        </div>
-      </div>`;
+let card = "";
 
 function Search() {
-  let search = document.getElementById("search").value;
+  let itemCard = document.getElementsByClassName("itemCard");
+  let Searchvalue = document.getElementById("search").value;
+  for (let i = 0; i < itemCard.length; i++) {
+    itemCard[i].style.display = "none";
+  }
 
-  fetch("./DB.json")
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-    });
-  switch (search) {
+  let itemcardrow = document.getElementById("itemCardRow");
+  console.log(Bugger);
+
+  switch (Searchvalue) {
     case "Bugger":
       Bugger.forEach((element) => {
-        card = `
-            <div class="cardPic">
-              <div class="CardPicItem" id="one"></div>
-            </div>
-    
-            <div class="cardDetails">
-              <div class="rate">
-                <p>${element.rate}</p>
-                <div class="star"></div>
-              </div>
-              <div class="namePrce">
-                <h3>${element.name}</h3>
-                <p>${element.type}</p>
-              </div>
-              <div class="stoke">
-                <span>Code</span>
-                <span> | </span>
-                <span>Stoke</span>
-              </div>
-              <div class="de">
-                <span>${element.code}</span>
-    
-                <span>${element.stoke}</span>
-              </div>
-              <div class="line"></div>
-              <div class="price">
-                <p>${element.price}</p>
-                <div class="plusIcon"></div>
-              </div>
-            </div>
-                    `;
-
-        let cardItem = document.getElementsByClassName("itemCard");
-        cardItem[i++].innerHTML = card;
-      });
-      break;
-    case "Chicken":
-      Chicken.forEach((element) => {
-        card1 = `<div class="cardPic">
-          <div class="CardPicItem3" ></div>
+        card += ` <div class="itemCard">
+        <div class="cardPic">
+          <div class="${element.classname}"></div>
         </div>
 
         <div class="cardDetails">
@@ -266,52 +144,85 @@ function Search() {
           <div class="line"></div>
           <div class="price">
             <p>${element.price}</p>
-            <div class="plusIcon"></div>
+            <div class="plusIcon" onclick="addcart()"></div>
           </div>
-        </div>`;
+        </div>
+      </div>`;
 
-        let cardItem = document.getElementsByClassName("itemCard");
-        cardItem[0].innerHTML = card1;
+        itemcardrow.innerHTML = card;
       });
       break;
-    case "Bevarage":
+    case "Chicken":
+      Chicken.forEach((element) => {
+        card += ` <div class="itemCard">
+        <div class="cardPic">
+          <div class="${element.classname}"></div>
+        </div>
+
+        <div class="cardDetails">
+          <div class="rate">
+            <p>${element.rate}</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>${element.name}</h3>
+            <p>${element.type}</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>${element.code}</span>
+
+            <span>${element.stoke}</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>${element.price}</p>
+            <div class="plusIcon" onclick="addcart()"></div>
+          </div>
+        </div>
+      </div>`;
+        itemcardrow.innerHTML = card;
+      });
+      break;
+    case "Beverage":
       Beverage.forEach((element) => {
-        card2 = `
-            <div class="cardPic">
-              <div class="CardPicItem4"></div>
-            </div>
-    
-            <div class="cardDetails">
-              <div class="rate">
-                <p>${element.rate}</p>
-                <div class="star"></div>
-              </div>
-              <div class="namePrce">
-                <h3>${element.name}</h3>
-                <p>${element.type}</p>
-              </div>
-              <div class="stoke">
-                <span>Code</span>
-                <span> | </span>
-                <span>Stoke</span>
-              </div>
-              <div class="de">
-                <span>${element.code}</span>
-    
-                <span>${element.stoke}</span>
-              </div>
-              <div class="line"></div>
-              <div class="price">
-                <p>${element.price}</p>
-                <div class="plusIcon"></div>
-              </div>
-            </div>
-                    `;
+        card += ` <div class="itemCard">
+        <div class="cardPic">
+          <div class="${element.classname}"></div>
+        </div>
 
-        let cardItem = document.getElementsByClassName("itemCard");
-        cardItem[i++].innerHTML = card2;
+        <div class="cardDetails">
+          <div class="rate">
+            <p>${element.rate}</p>
+            <div class="star"></div>
+          </div>
+          <div class="namePrce">
+            <h3>${element.name}</h3>
+            <p>${element.type}</p>
+          </div>
+          <div class="stoke">
+            <span>Code</span>
+            <span> | </span>
+            <span>Stoke</span>
+          </div>
+          <div class="de">
+            <span>${element.code}</span>
+
+            <span>${element.stoke}</span>
+          </div>
+          <div class="line"></div>
+          <div class="price">
+            <p>${element.price}</p>
+            <div class="plusIcon" onclick="addcart()"></div>
+          </div>
+        </div>
+      </div>`;
+        itemcardrow.innerHTML = card;
       });
-      break;
   }
 }
 
@@ -365,3 +276,14 @@ function isComplete() {
   // Return validation status
   return isValid;
 }
+
+function AddCart(x) {
+  switch (x) {
+    case "one":
+      let pic = document.getElementById("ONE").style.backgroundImage;
+      console.log("hello");
+      break;
+  }
+}
+
+AddCart("one");
